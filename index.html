@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Campus Complaint Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Smart Campus Complaint Management System</h1>
+
+    <div class="card">
+      <h2>Register Complaint</h2>
+
+      <input type="text" id="studentName" placeholder="Enter Student Name" />
+
+      <select id="category">
+        <option value="">Select Complaint Category</option>
+        <option>Wi-Fi Issue</option>
+        <option>Water Leakage</option>
+        <option>Classroom Damage</option>
+        <option>Cleanliness</option>
+        <option>Hostel Problem</option>
+      </select>
+
+      <textarea id="description" placeholder="Enter Complaint Description"></textarea>
+
+      <button onclick="addComplaint()">Submit Complaint</button>
+    </div>
+
+    <div class="card">
+      <h2>Complaint Records</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Student Name</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="complaintTable">
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer">
+      <p>Developed using HTML, CSS & JavaScript</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
